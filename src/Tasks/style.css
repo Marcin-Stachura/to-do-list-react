@@ -1,0 +1,102 @@
+.taskListRow {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+}
+
+@media (max-width: 767px) {
+    .taskListRow {
+        grid-template-columns: auto;
+    }
+}
+
+.taskListRow--buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+}
+
+@media (max-width: 767px) {
+    .taskListRow--buttons {
+        grid-template-columns: auto;
+    }
+}
+
+.taskListButton {
+    font-size: 16px;
+    color: hsl(180, 100%, 20%);
+    background-color: inherit;
+    border: none;
+    margin: 0px 0px 0px 20px;
+    transition: 0.3s;
+}
+
+.taskListButton:hover {
+    color: hsl(180, 100%, 28%);
+}
+
+.taskListButton:active {
+    color: hsl(180, 100%, 35%);
+}
+
+.taskListButton:disabled {
+    color: hsl(60, 10%, 75%);
+}
+
+.taskList__task {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 20px;
+    align-items: center;
+    color: hsl(60, 25%, 10%);
+    padding: 10px;
+    list-style-type: none;
+    border-bottom: 2px solid hsl(60, 25%, 85%);
+}
+
+.taskList__task--done {
+    color: hsl(60, 89%, 15%);
+}
+
+.taskList__task--hidden {
+    display: none;
+}
+
+.taskList__taskNameDone {
+    text-decoration: line-through;
+}
+
+.listButton {
+    width: 35px;
+    height: 35px;
+    border: none;
+    color: white;
+    padding: 0px;
+    transition: 0.3s;
+}
+
+.listButton--done {
+    background-color: hsl(120, 100%, 30%);
+    font-size: 130%;
+}
+
+.listButton--done:hover {
+    background-color: hsl(120, 100%, 35%);
+}
+
+.listButton--done:active {
+    background-color: hsl(120, 100%, 40%);
+}
+
+.listButton--remove {
+    background-color: hsl(353, 100%, 45%);
+    font-size: 160%;
+}
+
+.listButton--remove:hover {
+    background-color: hsl(353, 100%, 60%);
+}
+
+.listButton--remove:active {
+    background-color: hsl(353, 100%, 70%);
+}
