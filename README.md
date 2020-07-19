@@ -2,7 +2,7 @@
 
 ## Demo
 
-Soon to ba added
+https://marcin-stachura.github.io/to-do-list-react/
 
 ## Description
 
