@@ -1,18 +1,8 @@
 import React from "react";
 import "./style.css";
 
-const HeaderButtons = ({ tasks, hideDoneTasks }) => {
-    if (tasks.length === 0) {
-        return null;
-    };
-
-    let alldone = true;
-    for (const task of tasks) {
-        if (!task.taskDone)
-            alldone = false;
-    };
-
-    return (
+const HeaderButtons = ({ tasks, hideDoneTasks }) => (
+    tasks.length > 0 && (
         <span className="headerButtons">
 
             <button className="headerButtons__button">
@@ -20,12 +10,12 @@ const HeaderButtons = ({ tasks, hideDoneTasks }) => {
             </button>
 
             <button
-                disabled={alldone}
+                disabled={tasks.every(({ taskDone }) => taskDone)}
                 className="headerButtons__button">All tasks done!
              </button>
 
         </span>
     )
-};
+);
 
 export default HeaderButtons;
