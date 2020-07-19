@@ -7,7 +7,7 @@ const Tasks = ({ tasks, hideDoneTasks }) => (
       <li
         className={`tasks__task
           ${task.taskDone ? " tasks__task--done" : ""}
-          ${(hideDoneTasks && task.taskDone) ? " tasks__task--hidden" : ""}"
+          ${(hideDoneTasks && task.taskDone) ? " tasks__task--hidden" : ""}
           `}
       >
 
