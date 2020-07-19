@@ -8,6 +8,7 @@
     .headerButtons {
         grid-template-columns: auto;
         grid-gap: 20px;
+        margin-bottom: 10px;
     }
 }
 
@@ -16,7 +17,8 @@
     color: hsl(180, 100%, 20%);
     background-color: inherit;
     border: none;
-    margin: 0px 0px 0px 20px;
+    padding: 1px 3px;
+    margin: 0px 0px 0px 25px;
     transition: 0.3s;
 }
 

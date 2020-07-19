@@ -9,12 +9,11 @@
 }
 
 .section__header {
-    font-size: 24px;
-    font-weight: bold;
     margin: 0;
     padding: 15px;
     border-bottom: 3px solid hsl(60, 25%, 85%);
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr auto;
     grid-gap: 20px;
 }
@@ -23,4 +22,9 @@
     .section__header {
         grid-template-columns: auto;
     }
+}
+
+.section__header--title {
+    font-size: 24px;
+    font-weight: bold;
 }

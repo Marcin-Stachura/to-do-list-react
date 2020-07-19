@@ -3,7 +3,8 @@ import "./style.css";
 
 const Section = ({ title, body, extraHeaderContent }) => (
     <section className="section">
-        <div className="section__header"> <span>{title}</span>
+        <div className="section__header">
+            <span className="section__header--title">{title}</span>
             {extraHeaderContent}
         </div>
         <div className="section__body">
