@@ -1,11 +1,10 @@
 import React from "react";
 import "./style.css";
 
-const Buttons = ({ tasks, hideDoneTasks }) => {
+const HeaderButtons = ({ tasks, hideDoneTasks }) => {
     if (tasks.length === 0) {
         return null;
     };
-
 
     let alldone = true;
     for (const task of tasks) {
@@ -14,19 +13,19 @@ const Buttons = ({ tasks, hideDoneTasks }) => {
     };
 
     return (
-        <span className="taskListButtonRow">
+        <span className="headerButtons">
 
-            <button className="taskListButtonRow__button">
+            <button className="headerButtons__button">
                 {hideDoneTasks ? "Show " : "Hide "}done tasks
             </button>
 
             <button
                 disabled={alldone}
-                className="taskListButtonRow__button">All tasks done!
+                className="headerButtons__button">All tasks done!
              </button>
 
         </span>
     )
 };
 
-export default Buttons;
+export default HeaderButtons;

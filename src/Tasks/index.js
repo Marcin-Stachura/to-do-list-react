@@ -1,25 +1,26 @@
 import React from "react";
 import "./style.css";
 
-const Tasks = ({tasks, hideDoneTasks}) => (
-  <ul className="section__body">
+const Tasks = ({ tasks, hideDoneTasks }) => (
+  <ul className="tasks">
     {tasks.map(task => (
       <li
-        className={`taskList__task
-          ${task.taskDone ? " taskList__task--done" : ""}
-          ${(hideDoneTasks && task.taskDone) ? " taskList__task--hidden" : ""}"
+        className={`tasks__task
+          ${task.taskDone ? " tasks__task--done" : ""}
+          ${(hideDoneTasks && task.taskDone) ? " tasks__task--hidden" : ""}"
           `}
       >
-<button className="taskDone listButton listButton--done">
-            {task.taskDone ? "✔" : ""}
-            </button>
 
-            
-            <span className={task.taskDone ? "taskList__taskNameDone" : false}>
-            {task.taskName}
-            </span>
-            
-            <button className="listButton listButton--remove">🗑</button>
+        <button className="tasks__button tasks__button--done">
+          {task.taskDone ? "✔" : ""}
+        </button>
+
+        <span className={task.taskDone ? "tasks__taskNameDone" : false}>
+          {task.taskName}
+        </span>
+
+        <button className="tasks__button tasks__button--remove">🗑</button>
+
       </li>
     ))}
   </ul>

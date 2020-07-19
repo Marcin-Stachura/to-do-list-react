@@ -1,17 +1,17 @@
-.taskListButtonRow {
+.headerButtons {
     display: grid;
     grid-template-columns: auto auto;
     justify-items: center;
 }
 
 @media (max-width: 767px) {
-    .taskListButtonRow {
+    .headerButtons {
         grid-template-columns: auto;
         grid-gap: 20px;
     }
 }
 
-.taskListButtonRow__button {
+.headerButtons__button {
     font-size: 16px;
     color: hsl(180, 100%, 20%);
     background-color: inherit;
@@ -20,14 +20,14 @@
     transition: 0.3s;
 }
 
-.taskListButtonRow__button:hover {
+.headerButtons__button:hover {
     color: hsl(180, 100%, 28%);
 }
 
-.taskListButtonRow__button:active {
+.headerButtons__button:active {
     color: hsl(180, 100%, 35%);
 }
 
-.taskListButtonRow__button:disabled {
+.headerButtons__button:disabled {
     color: hsl(60, 10%, 75%);
 }

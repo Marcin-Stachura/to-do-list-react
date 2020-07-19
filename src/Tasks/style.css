@@ -1,49 +1,8 @@
-.taskListRow {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-gap: 20px;
+.tasks {
+    padding: 0px;
 }
 
-@media (max-width: 767px) {
-    .taskListRow {
-        grid-template-columns: auto;
-    }
-}
-
-.taskListRow--buttons {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-items: center;
-}
-
-@media (max-width: 767px) {
-    .taskListRow--buttons {
-        grid-template-columns: auto;
-    }
-}
-
-.taskListButton {
-    font-size: 16px;
-    color: hsl(180, 100%, 20%);
-    background-color: inherit;
-    border: none;
-    margin: 0px 0px 0px 20px;
-    transition: 0.3s;
-}
-
-.taskListButton:hover {
-    color: hsl(180, 100%, 28%);
-}
-
-.taskListButton:active {
-    color: hsl(180, 100%, 35%);
-}
-
-.taskListButton:disabled {
-    color: hsl(60, 10%, 75%);
-}
-
-.taskList__task {
+.tasks__task {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 20px;
@@ -54,19 +13,19 @@
     border-bottom: 2px solid hsl(60, 25%, 85%);
 }
 
-.taskList__task--done {
+.tasks__task--done {
     color: hsl(60, 89%, 15%);
 }
 
-.taskList__task--hidden {
+.tasks__task--hidden {
     display: none;
 }
 
-.taskList__taskNameDone {
+.tasks__taskNameDone {
     text-decoration: line-through;
 }
 
-.listButton {
+.tasks__button {
     width: 35px;
     height: 35px;
     border: none;
@@ -75,28 +34,28 @@
     transition: 0.3s;
 }
 
-.listButton--done {
+.tasks__button--done {
     background-color: hsl(120, 100%, 30%);
     font-size: 130%;
 }
 
-.listButton--done:hover {
+.tasks__button--done:hover {
     background-color: hsl(120, 100%, 35%);
 }
 
-.listButton--done:active {
+.tasks__button--done:active {
     background-color: hsl(120, 100%, 40%);
 }
 
-.listButton--remove {
+.tasks__button--remove {
     background-color: hsl(353, 100%, 45%);
     font-size: 160%;
 }
 
-.listButton--remove:hover {
+.tasks__button--remove:hover {
     background-color: hsl(353, 100%, 60%);
 }
 
-.listButton--remove:active {
+.tasks__button--remove:active {
     background-color: hsl(353, 100%, 70%);
 }

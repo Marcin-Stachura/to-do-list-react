@@ -1,7 +1,7 @@
 import React from "react";
 import Form from "./Form";
 import Tasks from "./Tasks";
-import Buttons from "./Buttons";
+import HeaderButtons from "./HeaderButtons";
 import Section from "./Section";
 import Header from "./Header";
 import Main from "./Main";
@@ -16,6 +16,7 @@ const hideDoneTasks = false;
 
 function App() {
   return (
+
     <Main>
 
       <Header
@@ -28,8 +29,8 @@ function App() {
       />
 
       <Section
-        title="Task list:"
-        extraHeaderContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+        title="Task list"
+        extraHeaderContent={<HeaderButtons tasks={tasks} hideDoneTasks={hideDoneTasks} />}
         body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />}
       />
     </Main>

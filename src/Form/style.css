@@ -10,6 +10,12 @@
     }
 }
 
+.form__input {
+    padding: 5px 10px;
+    border: 2px solid hsl(60, 25%, 85%);
+    min-height: 38px;
+}
+
 .form__button {
     border: none;
     background-color: hsl(180, 100%, 25%);
@@ -31,10 +37,4 @@
 
 .form__button:active {
     background-color: hsl(180, 100%, 35%);
-}
-
-.form__input {
-    padding: 5px 10px;
-    border: 2px solid hsl(60, 25%, 85%);
-    min-height: 38px;
 }
