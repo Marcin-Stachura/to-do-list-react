@@ -37,6 +37,12 @@ function App() {
     }));
   };
 
+  const removeTask = (id) => {
+    setTasks(tasks => tasks.filter(
+      task => task.id !== id,
+    ));
+  };
+
   return (
 
     <Main>
@@ -64,6 +70,7 @@ function App() {
             tasks={tasks}
             hideDoneTasks={hideDoneTasks}
             toggleDoneTask={toggleDoneTask}
+            removeTask={removeTask}
           />}
       />
     </Main>
