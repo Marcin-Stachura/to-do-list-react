@@ -9,10 +9,7 @@ import Main from "./Main";
 function App() {
 
   const [hideDoneTasks, setHideDoneTasks] = useState(false);
-  const [tasks, setTasks] = useState([
-    { id: 1, taskName: "task not done", taskDone: false },
-    { id: 2, taskName: "task done", taskDone: true },
-  ]);
+  const [tasks, setTasks] = useState([]);
 
   const toggleHideDoneTasks = () => {
     setHideDoneTasks(hideDoneTasks => !hideDoneTasks);
