@@ -6,9 +6,9 @@ https://marcin-stachura.github.io/to-do-list-react/
 
 ## Description
 
-<img src="./public/listscreenshot.jpg" width="600" alt="">
+<img src="./public/listscreenshot.png" width="600" alt="">
 
-A simple to-do list. Currently no interactions yet - soon to ba added.
+A simple to-do list. The functionality includes adding new tasks, toggling the added ones as done/not done, and deleting them. When at least one task is added, two buttons show up: one for showing/hiding all tasks that are done, and one for marking all tasks as done.
 
 Technologies used:
 - HTML
